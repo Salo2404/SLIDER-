@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#controlLeft {
+    font-size: 50px;
+    color: blue;
+}
+
+#controlright {
+    font-size: 50px;
+    color: red;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+#slider {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.indicators {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    column-gap: 10px;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.indicator.active {
+    border-color: red;
+}
